@@ -21,6 +21,7 @@
         <img src="http://placehold.it/1440x581" alt="" class="bg-header" width="1440" height="581">
     </head>
     <main>
+        <h1 class="hidden">Anne Sweet</h1>
         <section class="articles">
             <h2>Все статьи</h2>
             <select name="choose-theme" id="choose-theme">
@@ -30,6 +31,7 @@
                 <option value="travelling">Путешествия</option>
                 <option value="recipes">Рецепты</option>
                 <option value="photos">Фотографии</option>
+                <option value="all">Все</option>
             </select>
             <ul class="articles_list">
                 <li class="articles_item articles_item--small">
@@ -71,7 +73,76 @@
                     <time datetime="2020-06-24">24.06.2020</time>
                 </li>
             </ul>
-        </section>   
+            <button class="button">Показать еще</button>
+        </section>
+        <section class="about-me">
+            <h2>Обо мне</h2>
+            <img src="http://placehold.it/590x693" width="590" height="693" alt="#">
+            <p>Всем привет! Меня зовут Аня, и это мой личный блог.
+                Здесь ты найдёшь рассказы о моих путешествиях, снимки
+                на плёнку, рецепты, обзоры на книги. В общем, тексты о том,
+                что мне инетресно.</p>
+            <p>Я работаю копирайтером, поэтому мой блоге — это ещё и моё
+                портфолио. Ниже размещены несколько моих лучших
+                рабочих текстов. Буду рада новым сотрудничествам!</p>
+            <p>Если вы хотите написать мне — это можно сделать в соцсетях
+                или через форму. Всегда приятно услышать обратную связь
+                от читателей и познакомиться поближе.</p>
+            <p>Приятного чтения!</p>
+            <blockquote>
+                <p>Я верю, что каждый раз пробуя новое,
+                    выходящее за зону моего комфорта,
+                    я действительно узнаю настояющую
+                    себя. </p>
+            </blockquote>
+        </section>
+        <section class="portfolio">
+            <h2>Портфолио</h2>
+            <ul class="portfolio-list">
+                <li class="portfolio-item">
+                    <a href="#">
+                        <h3>Блог HTML Academy</h3>
+                        <h4>«Как учиться продуктивно»</h4>
+                        <p>Про основные методы обучения,
+                            которые помогут быстро и надолго
+                            запомнить информацию.</p>
+                    </a>
+                </li>
+                <li class="portfolio-item">
+                    <a href="#">
+                        <h3>Журнал «LNK»</h3>
+                        <h4>«Зачем поцели нужны человеку?
+                            И какие они бывают»</h4>
+                        <p>Поцелуи — повсеместная ежедневная
+                            практика. Но зачем люди целуются?
+                            Какие смысли вкладывают в этот ритуал?
+                            И где корни этой практики?</p>
+                    </a>
+                </li>
+                <li class="portfolio-item">
+                    <a href="#">
+                        <h3>Журнал «Т — Л»</h3>
+                        <h4>«Советы по эффективной
+                            удалённой работе»</h4>
+                        <p>Поделилась лайфхаками, которые помогают
+                            мне работать продуктивно из дома. </p>
+                    </a>
+                </li>
+            </ul>
+            <button class="button">Показать еще</button>
+        </section>
+        <section class="write-me">
+            <h2>Написать мне</h2>
+            <form action="post">
+                <label for="value-name">Ваше имя</label>
+                <input type="text" name="name" id="value-name" value="Иван Иванов">
+                <label for="value-email">Email</label>
+                <input type="email" name="email" id="value-email" value="google@gmail.com">
+                <label for="value-comment">Сообщение</label>
+                <textarea name="commet" id="value-comment" cols="30" rows="10">Напишите здесь ваше сообщение.</textarea>
+                <button type="submit" class="button">Отправить</button>
+            </form>
+        </section>
     </main>
     <footer>
         <ul>

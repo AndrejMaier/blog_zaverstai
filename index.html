@@ -6,16 +6,16 @@
     <title>Anne Sweet</title>
 </head>
 <body>
-    <head>
+    <head class="main-header">
         <div class="logo">
-            <img src="http://placehold.it/130x83" alt="" class="logo_img" width="130" height="83">
+            <img src="http://placehold.it/130x83" alt="" class="logo__img" width="130" height="83">
         </div>
         <nav class="main-nav">
-            <ul class="main-nav_list">
-                <li><a href="#" class="main-nav_link">Статьи</a></li>
-                <li><a href="#" class="main-nav_link">Обо мне</a></li>
-                <li><a href="#" class="main-nav_link">Портфолио</a></li>
-                <li><a href="#" class="main-nav_link">Написать мне</a></li>
+            <ul class="main-nav__list">
+                <li class="main-nav__item"><a href="#" class="main-nav__link">Статьи</a></li>
+                <li class="main-nav__item"><a href="#" class="main-nav__link">Обо мне</a></li>
+                <li class="main-nav__item"><a href="#" class="main-nav__link">Портфолио</a></li>
+                <li class="main-nav__item"><a href="#" class="main-nav__link">Написать мне</a></li>
             </ul>
         </nav>
         <img src="http://placehold.it/1440x581" alt="" class="bg-header" width="1440" height="581">
@@ -24,7 +24,7 @@
         <h1 class="hidden">Anne Sweet</h1>
         <section class="articles">
             <h2>Все статьи</h2>
-            <select name="choose-theme" id="choose-theme">
+            <select name="choose-theme" id="choose-theme" class="articles__choose">
                 <option>Выбрать тему</option>
                 <option value="city">Город</option>
                 <option value="books">Книги</option>
@@ -33,43 +33,43 @@
                 <option value="photos">Фотографии</option>
                 <option value="all">Все</option>
             </select>
-            <ul class="articles_list">
-                <li class="articles_item articles_item--small">
+            <ul class="articles__list">
+                <li class="articles__item articles__item--small">
                     <img src="http://placehold.it/387x268" alt="" width="387" height="268">
                     <h3>Путешествие в Берлин в августе </h3>
                     <p>Летний месяц я провела в столице Германии вместе с друзьями. И вот как это было!</p>
-                    <span class="articles_tag ">Теги: путешествия</span>
+                    <span class="articles__tag ">Теги: путешествия</span>
                     <time datetime="2020-09-29">29.09.2020</time>
                 </li>
-                <li class="articles_item articles_item--small">
+                <li class="articles__item articles__item--small">
                     <img src="http://placehold.it/387x268" alt="" width="387" height="268">
                     <h3>Где выпить колдбрю в Москве</h3>
                     <p>Собрала для вас список любимых кофеен,
                         где подают лучший летний напиток.</p>
-                    <span class="articles_tag">Теги: город</span>
+                    <span class="articles__tag">Теги: город</span>
                     <time datetime="2020-07-24">24.07.2020</time>
                 </li>
-                <li class="articles_item articles_item--small">
+                <li class="articles__item articles__item--small">
                     <img src="http://placehold.it/387x268" alt="" width="387" height="268">
                     <h3>Прочитано: книжные рекомендации</h3>
                     <p>Рассказываю о прочитанных за последнее время книгах: фавориты и провалы.</p>
-                    <span class="articles_tag">Теги: книги</span>
+                    <span class="articles__tag">Теги: книги</span>
                     <time datetime="2020-07-15">15.07.2020</time>
                 </li>
-                <li class="articles_item articles_item--large">
+                <li class="articles__item articles__item--large">
                     <img src="http://placehold.it/590x552" alt="" width="590" height="552">
                     <h3>Снимки на плёнку</h3>
                     <p>Поделилась с вами весенними фотографиями, 
                         и секретами удачных снимков.</p>
-                    <span class="articles_tag">Теги: фотографии</span>
+                    <span class="articles__tag">Теги: фотографии</span>
                     <time datetime="2020-06-29">29.06.2020</time>
                 </li>
-                <li class="articles_item articles_item--large">
+                <li class="articles__item articles__item--large">
                     <img src="http://placehold.it/590x552" alt="" width="590" height="552">
                     <h3>Домашний чизкейк </h3>
                     <p>Что может быть лучше чизкейка с сезонными
                         ягодами? Только домашний чизкейк!</p>
-                    <span class="articles_tag">Теги: рецепты</span>
+                    <span class="articles__tag">Теги: рецепты</span>
                     <time datetime="2020-06-24">24.06.2020</time>
                 </li>
             </ul>
@@ -98,8 +98,8 @@
         </section>
         <section class="portfolio">
             <h2>Портфолио</h2>
-            <ul class="portfolio-list">
-                <li class="portfolio-item">
+            <ul class="portfolio__list">
+                <li class="portfolio__item">
                     <a href="#">
                         <h3>Блог HTML Academy</h3>
                         <h4>«Как учиться продуктивно»</h4>
@@ -108,7 +108,7 @@
                             запомнить информацию.</p>
                     </a>
                 </li>
-                <li class="portfolio-item">
+                <li class="portfolio__item">
                     <a href="#">
                         <h3>Журнал «LNK»</h3>
                         <h4>«Зачем поцели нужны человеку?
@@ -119,7 +119,7 @@
                             И где корни этой практики?</p>
                     </a>
                 </li>
-                <li class="portfolio-item">
+                <li class="portfolio__item">
                     <a href="#">
                         <h3>Журнал «Т — Л»</h3>
                         <h4>«Советы по эффективной
@@ -144,7 +144,7 @@
             </form>
         </section>
     </main>
-    <footer>
+    <footer class="main-footer">
         <ul>
             <li><a href="#">ВК</a></li>
             <li><a href="#">Телеграм</a></li>
